@@ -1,0 +1,219 @@
+<html>
+<head>
+<title>【part2】99は自力でロジバンを構文解析するようです</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>99はro roi za'u re'u ji'aを自力で構文解析するようです</h1>  
+※以下は、事実を基に再構成した物語です。物語の都合上、またはログ不存在などの理由で、全てが事実というわけではありません。（特に時刻）<br>  
+※以下、ロジバンの専門用語が数多く登場します。ロジバン入門者は先に<a href="http://cogas.github.com/hajiloji">はじめてのロジバン 第2版</a>を読んでください。
+<pre>
+2016/12/15 14:22  
+99「昨日は、結局1行訳すのに1日掛かってしまった」
+99「明らかにTwitterが原因なので、今回はオフラインで作業していこう」
+99「というか、過去に30分でやった部分ぐらいさっさとやってこうよという」
+
+<div class="lyrics">
+ni'o doi zei bacru bu'u da tedi'o lo menli
+.i roroi cinmo dansu pe'a senva co gleki .au
+.i ge dunku du'emei sei va'i ba'onai kancu
+gi ku'i ju'o penmi .ui do lo zu'i bancu
+</div>
+
+</pre> 
+
+<h2>第2話: </h2>  
+
+<pre>
+
+2016/12/15 14:24
+99「さて、2行目入りましょう」
+99「確か{roroi}が頻度のselbritcita、{pe'a}と{.au}が心態詞」
+99「で、メインとなるのがtanruである{cinmo dansu senva co gleki}」
+
+99「selbritcitaは闇なのでまずtanruの方をやっていこう」
+99「{dansu}と{gleki}、そして{co}がはじロジ登場済み」
+<dl class="def"><dt>cinmo</dt><dd>x1 は x2 （感情）を x3 について覚える； x1 は感情的／ムードに浸っている</dd></dl>
+<dl class="def"><dt>senva</dt><dd>x1 は x2 （事）を夢見る； x2 は夢想／幻想</dd></dl>
+99「んで{dansu}には比喩の心態詞{pe'a}が掛かっている」
+<dl class="def"><dt>pe'a</dt><dd>比喩 ： 左の語句が比喩的であることを示す</dd></dl>
+99「よってこのtanruを直訳すると」
+
+『嬉しい[感情を覚える/踊る(比喩)/夢見る]』
+
+99「さてあとは<ruby><rb>tanru</rb><rp>（</rp><rt>メタファー</rt><rp>）</rp></ruby>をどう意訳するか」
+99「まずは{cinmo dansu pe'a}。まあ『心が躍る』って日本語があるし使おう」
+
+『嬉しい[心が躍る/夢見る]』
+
+99「『心が躍る』を辞書で引く限り、喜びの感情を表すようだし、{gleki}は外すか」
+
+『心が躍るような夢を見る』
+
+
+
+2016/12/15 14:48
+99「tanruが訳せたので残りをやろう。{.au}は<a href="http://cogas.github.io/hajiloji/article/nunctu/25.html">25章</a>に載ってる。『～したい』ぐらいでいいだろう」
+
+『心が躍るような夢を見たい』
+
+
+
+2016/12/15 20:16
+99「起きた。やっていこう」
+99「残るは{roroi}。頻度のselbritcitaだったのは覚えているが、selbritcitaって総じて闇という風潮があるので頑張っていこう。」
+
+99「とりあえず、おかゆプロの<a href="http://iuk.hateblo.jp/entry/2016/11/06/165554">slabu gerna の selbritcita まわりと複合タグ</a>でも読むか」
+
+『このあたり、ロジバンPEGで嫌いなところベスト１０くらいには入りますね。』
+
+99「うわぁやりたくない」
+99「とか言っててもしょうがないのでやろう。幸い今回は複合していない」
+
+
+2016/12/15 20:49
+99「そもそも、確か{roi}もはじロジ未登場なはずなので、辞書引こう」
+<dl class="def"><dt>roi</dt><dd>頻度テンス。「～回にわたって」。数量詞の右に付く。</dd></dl>
+
+99「だからといって{roroi}を『全て回にわたって』と訳すと非文なので、意訳が求められる。」
+99「英語で辞書を引くと載ってるな。日本語だと出ないけど」
+<dl class="def"><dt>roroi</dt><dd>always; objectively quantified tense; defaults as time tense.</dd></dl>
+99「{roroi}で『常に』とでも訳せばいいな。」
+
+
+2016/12/15 21:06
+99「ということで、この行の翻訳はこんな感じ」
+
+『心が躍るような夢を常に見たい』
+
+99「さて次の行だ、今回は進捗がいいぞ」
+
+
+
+
+2016/12/15 21:29
+99「さて3行目と4行目だ」
+
+<div class="lyrics">
+.i ge dunku du'emei sei va'i ba'onai kancu
+gi ku'i ju'o penmi .ui do lo zu'i bancu
+</div>
+
+99「ge .. giが2つの…『命題』、でいいのかな、を結んでいると。」
+99「前置接続詞は何も考えなくとも範囲が分かるので素晴らしい」
+
+99「まずは{dunku du'emei sei va'i ba'onai kancu}」
+99「すごい、知ってる単語が一つもない」
+99「と思ったが{ba'o}と{nai}は知ってる」
+
+99「{ba'o}に{nai}ってくっつくのかな。とりあえずさっきのselbritcitaの記事読むか」
+
+
+2016/12/15 21:44
+99「えーっと{ba'o}のselma'oは……ZAhOか。」
+99「どれどれ」
+<div style="border:1px solid black; margin:10px; padding:2px; width: 604px;"><img src="ZAhONAI.png" alt="ZAhO+NAI" width="300"/></div>
+99「なるほどー」
+
+2016/12/15 22:02
+99「文法上許されるということは分かったが、{ba'onai}の意味論は分からんな」
+99「一応CLL見るか。載ってた記憶がないけど」
+
+<dl class="cll"><dt>CLL 10.18</dt><dd>Any bridi which involves tenses of selma'o PU, FAhA, or ZAhO can be contradicted by a -nai suffixed to the tense cmavo.</dd><dd>PU, FAhA, ZAhOの時制が関わるbridiは、時制の機能語にnaiを後続させることでcontradictory negationにできる</dd>
+
+99「contradictory negationは文全体が偽であることの主張、だったかな」
+CLL "As a contradictory negation, Example 10.129 implies that the bridi as a whole is false without saying anything about what is true."
+99「なるほど。ではそろそろ本文に戻ろう」
+
+
+2016/12/15 22:29
+99「とりあえず単語引こうか。まずはgismu」
+<dl class="def"><dt>dunku</dt><dd>x1 は x2 （事）について苦悩／苦悶する</dd></dl>
+<dl class="def"><dt>kancu</dt><dd>x1 は x2 （集合）について x3 （数量）を x4 （単位）で数える</dd></dl>
+99「次にcmavo」
+<dl class="def"><dt>du'e</dt><dd>過多 ： 数量詞；</dd></dl>
+<dl class="def"><dt>sei</dt><dd>メタ言語 bridi ： 本来の命題の構文から外れて挿入する bridi の開始点を示す</dd></dl>
+<dl class="def"><dt>va'i</dt><dd>換言；「言い換えれば」「つまり」</dd></dl>
+
+99「meiは、はじロジでやったはずだがあまり覚えてないな。<a href="http://cogas.github.io/hajiloji/article/nunctu/21.html">21章</a>から引用」
+<dl class="def"><dt>mei</dt><dd>MOI類；頭に数詞を取り込んで、「x1 は [数]個だ」というPSの述なれ語になる</dd></dl>
+99「あ、そうか、述なれ語なのか。ということはtanruか。4ヶ月前にやったときは気づかなかったな」
+99「ということで{dunku du'emei}は『苦悩/過多-個』を意訳して『苦悩が多すぎる』とでもするか」
+
+
+2016/12/15 22:55
+99「あとは{sei va'i ba'onai kancu}、これはそのまま『つまり、数え終わらない』とでもすればよい」
+99「ということで{dunku du'emei sei va'i ba'onai kancu}をまとめると、」
+
+『苦悩が多すぎる―つまり、数え終わらない―』
+
+99「よし、3行目もほぼ終わった。次にいこう」
+
+
+
+2016/12/15 23:02
+<div class="lyrics">
+.i ge dunku du'emei sei va'i ba'onai kancu
+gi ku'i ju'o penmi .ui do lo zu'i bancu
+</div>
+99「{ku'i}{ju'o}{.ui}が心態詞。」
+<dl class="def"><dt>ku'i</dt><dd>しかし／だが／ところが／それでも</dd></dl>
+<dl class="def"><dt>ju'o</dt><dd>「確かに」「まちがいなく」</dd></dl>
+99「{penmi}のx2に{do}、x3に{lo zu'i bancu}だから、」
+
+『しかし確かにあなたにlo zu'i bancuで会う』
+
+
+
+2016/12/15 23:17
+99「えっと、{lo zu'i bancu}ってなんだろう」
+<dl class="def"><dt>zu'i</dt><dd>典型 sumti ： 代詞（sumti）「例のアレ」</dd></dl>
+<dl class="def"><dt>bancu</dt><dd>x1 は x2 （境界／限度）を x3 （照合点）について x4 （性質／数量）だけ越している／超えている；境界の向こう側に位置</dd></dl>
+
+99「なるほど、例のLE bare-sumti selbriの構文か。まだはじロジに載ってないアレ。と思ったが第1版には<a href="http://seesaawiki.jp/hajiloji/d/%b9%e0%a4%c7%b9%e0%a4%f2%28pe%2cne%29#footnote3">載ってる</a>な」
+99「とりあえずこれで翻訳はできる」
+
+
+2016/12/15 23:34
+99「<a href="https://twitter.com/sosoBOTpi/status/809406228849770497">あれ、lo ko'a brodaってlo broda ku pe ko'aだっけ lo broda pe ko'a kuだっけ</a>」
+おかゆプロ「<a href="https://twitter.com/oka_iu_tcan/status/809406369241526274">たしか後者だったような</a>」
+99「<a href="https://twitter.com/sosoBOTpi/status/809406799388381184">ki'e</a>」
+
+
+2016/12/15 23:39
+99「ということで翻訳」
+
+『しかし、例のアレに関する向こうにあるzo'eで確かにあなたに会う』
+
+99「このzo'eは『場所』だろうな。ついでに言い換え」
+
+『しかし、向こうの例の場所で確かにあなたに会う』
+
+99「よく分からない日本語になったがまあいいや」
+
+
+
+
+2016/12/15 23:41
+99「まとめよう」
+
+
+『心のなかのとある場所で呼びかける』
+『心が躍るような夢を常に見たい』
+『苦悩が多すぎる―つまり、数え終わらない―けれど、向こうの例の場所で確かにあなたに会う』
+
+
+99「ふう、ここまでやってやっと4行か」
+99「まあ気長にやっていきましょう」
+</pre>
+<br>
+ro roi za'u re'uについて
+<table>
+<tr><td></td><td></td></tr>
+<tr><td>原作者名</td><td>覚 和歌子 作詞、木村 弓 作曲</td></tr>
+<tr><td>原題名</td><td>「いつも何度でも」</td></tr>
+<tr><td>訳者名</td><td>la .guskant.</td></tr>
+<tr><td>リンク</td><td><a href="https://vimeo.com/113232481">https://vimeo.com/113232481</a></td></tr>
+</table>
+</body> 
+</html>
