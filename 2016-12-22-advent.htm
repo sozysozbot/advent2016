@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>【part4】99は自力でロジバンを構文解析するようです</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>99はro roi za'u re'u ji'aを自力で構文解析するようです</h1>
+この記事は<a href="http://www.adventar.org/calendars/1554">ロジバン Advent Calendar 2016 - Adventar</a>の22日目の記事です。<br><br>  
+※以下は、事実を基に再構成した物語です。物語の都合上、またはログ不存在などの理由で、全てが事実というわけではありません。（特に時刻）<br>  
+※以下、ロジバンの専門用語が数多く登場します。ロジバン入門者は先に<a href="http://cogas.github.com/hajiloji">はじめてのロジバン 第2版</a>とかを読んでください。
+<pre>
+2016/12/22 11:27
+99「あれ、このままのペースだと普通にアドカレの枠が足りないのでは」
+99「まあ別に全てをアドカレに載せなくても一応いいんだけどねぇ」
+99「とりあえず、わずかな時間を見つけて構文解析やっていきましょう」
+</pre> 
+
+<h2>第4話: 終わるのか？</h2>  
+
+<pre>
+2016/12/22 11:29
+99「とりあえず2番の歌詞を見よう」
+
+<div class="lyrics">
+ni'o cagi co'o zei co'e gi smaji menli
+.i lo xadni noi co'a nova'e cu tirna jundi
+.i nu ca'o jmive kei je .u'e nu co'a morsi kei
+.i lo xrula lo brife lo tcadu ro da zo'u go'i
+
+.i lo'u lan lan la lan lalalala lan lan la lan lalalala
+lan lan lala lan la lala lan lalalala lan
+.o'o'o'o'o'o'o'o'o'o lun lun lu lu'u'u'u'u'u
+lulululu lun lululu lun lu le'u
+</div>
+
+99「とりあえず、後ろ4行が自明に楽なのでやっていこう」
+99「{lo'u .. le'u}は非文法引用。中に入っている単語は統語論上はcmavoとcmevlaだが、非文法引用なので何も考えなくてよい」
+99「まあ強いて言うことがあるとすれば、cmevlaとして{lan}を使っているのでCLL準拠ではなくdotside準拠ということぐらいか」
+99「あとは、疑問文への応答の話で出てきたように、{.i}の間にsumtiしかないというのもgendraだというのもあるな」
+99「はい4行終わった。やったぜ」
+
+
+
+2016/12/22 11:39
+99「さて前半4行。まずは3・4行目をやろう」
+99「{.i nu ca'o jmive kei je nu co'a morsi kei}は全部はじロジの範囲内」
+99「後半は{ca co'a}よりも{ba co'a}で取ったほうが良さそう」
+99「よって『生きているということ、いずれ死ぬということ』」
+
+99「後はUIの{.u'e}を足せば終わり」
+<dl class="def"><dt>.u'e</dt><dd>畏敬；崇高／壮大なそれにたいする畏れの気持</dd></dl>
+99「構文上も{je}に掛かっているんだから、意味上も全体にかければよかろう」
+
+『生きているということ、いずれ死ぬということ（畏敬の念）』
+
+99「できた」
+
+
+
+
+2016/12/22 11:51
+99「次は4行目。これは{brife}だけ調べれば終わり」
+<dl class="def"><dt>brife</dt><dd>x1 は x2 （起源）・ x3 （速度）の風； x1 は x2 から吹く； x2 は x1 を吹く</dd></dl>
+99「よって直訳は」
+
+『花・風・都市・全てのものは前述のとおりだ』
+
+<!-- 
+<dl class="def"><dt></dt><dd></dd></dl>
+-->
+</pre>
+<section>
+<sup><a href="#sup1" name="end1" id="end1">[1]</a></sup>それを言うなら{gerna drani}だ、doi vi mutce bebna（記事書く前に辞書引いて発覚）
+<dl class="def"><dt>drata</dt><dd>x1 は x2 ではない何か、 x3 （基準）において； x1 は他のもの</dd></dl>
+<dl class="def"><dt>drani</dt><dd>x1 は x2 （性質）に関して x3 （状況）のとき x4 （基準）において正しい／正確／適宜</dd></dl>
+<sup><a href="#sup2" name="end2" id="end2">[2]</a></sup>全部訳し終わるまで日本語歌詞は見ない縛り
+</section>
+<br>
+ro roi za'u re'uについて
+<table>
+<tr><td></td><td></td></tr>
+<tr><td>原作者名</td><td>覚 和歌子 作詞、木村 弓 作曲</td></tr>
+<tr><td>原題名</td><td>「いつも何度でも」</td></tr>
+<tr><td>訳者名</td><td>la .guskant.</td></tr>
+<tr><td>リンク</td><td><a href="https://vimeo.com/113232481">https://vimeo.com/113232481</a></td></tr>
+</table>
+</body> 
+</html>
