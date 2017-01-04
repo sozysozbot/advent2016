@@ -6,7 +6,7 @@ fi'e [la .sozysozbot.](http://twitter.com/sosobotpi)
 ### 0. 概要
 ロジバンにおいて、lujvo（複合語）を作る規則は意外とめんどくさいし、聖典CLLの説明は分かりにくい。さらに、英語資料は一応あるもののまとまった日本語資料が見当たらない。  
 ということで、jvozbaを[再発明](https://sozysozbot.github.io/sozysozbot_jvozba/sozysozbot_jvozba.html)した筆者が実装時のわーきゃーを踏まえながら解説記事を書いてみようと思う。  
-なお、筆者が理解していないので、意味論には触れない。
+なお、筆者が理解していないので、意味論には触れない。  
 
 ---------
 
@@ -20,8 +20,7 @@ fi'e [la .sozysozbot.](http://twitter.com/sosobotpi)
 …  
 と、言えたらどんなに嬉しいことか。  
 困ったことに、CLLはrafsiに関して自己矛盾を含んでいるのである。  
-その話は後で触れるとして、まずはサラッとrafsiについて解説する。そもそも「英語を読まずにlujvoの仕様を理解させる」のがこの記事の目標なので。  
-  
+その話は[別記事](https://sozysozbot.github.io/FIXME)で触れる<sup>[1](#foot1)</sup>として、ここではサラッとrafsiについて解説するのみにしておく。  
 rafsiとは、複合語(lujvo)を生み出すための形態素で、その形には8種類ある。
 
 3文字:
@@ -30,7 +29,7 @@ rafsiとは、複合語(lujvo)を生み出すための形態素で、その形�
 --- | ---
 Cvv | -bau-
 CCV | -jbo-
-Cv'v <sup>[1](#foot1)</sup> | -ma'o-
+Cv'v <sup>[2](#foot2)</sup> | -ma'o-
 CVC | -sel-
 
 4文字:
@@ -47,7 +46,50 @@ CVC/C | -karc-
 CCVCV | -plise-
 CVC/CV | -karce-
 
+なお、5文字rafsiはlujvo末でのみ使うことができる。  
+<br>
+
+結論から言えば、lujvoはこのrafsiをくっつけていけば作れるのだが、そのくっつけるための規則がめんどくさいのである。以下その規則を解説していく。
 
 --------
 
-<a name="foot1">1</a>: アポストロフィは文字数に入れないので-ma'o-も3文字rafsi
+### 2. rafsiをくっつける
+まず大前提として、lujvoはbrivlaなので、lujvo末には母音で終わるrafsiが来なくてはならない。  
+それが済んだら、rafsiをくっつけていけばいいが、諸事情により「ハイフン字」（`y`, `n`, `r`）がrafsi間に挿入されることがある。「諸事情」とは、
+
+* 4文字rafsi  
+* 禁則回避  
+* 剥がれ落ち防止  
+
+の3パターンである。
+
+
+#### 2-1. 4文字rafsi
+4文字rafsiの後ろには必ず`y`が必要である。  
+
+例：  
+-plis- + -ladru- → plis**y**ladru
+
+これは、lujvoを一意に分解するのに必要な規則である。この規則と、lujvoの2文字目には絶対にyが来ないということから、先頭を読むだけで {plisyladru} が *[-pli- + syladru] ではなく [-plisy- + ladru] であることを知ることができるのだ。流石LLG、賢い。  
+ちなみにこの例でyを抜かすと{plisladru}となるが、これは[-pli- + -sla- + -dru-]である。CVC/C型の場合は、{karctadji}を考えてみよう。
+
+
+#### 2-2. 禁則回避
+そのままくっつけると禁則な子音列が発生する場合、2つのrafsiの間には`y`が要求される。  
+
+例：  
+-fam- + -ma'o- → fam**y**ma'o （同一子音連続回避）  
+-fas- + -bau- → fas**y**bau （無声阻害音＋有声阻害音回避）  
+-cen- + -dje- → cen**y**dje （`ndj`回避）  
+
+この規則はロジバンの音韻構造の制約を直に受けているだけのものであり、それ以上に深い意味は特にない。
+
+
+
+
+
+
+--------
+
+<a name="foot1">1</a>: 無駄に長くなったので分離  
+<a name="foot2">2</a>: アポストロフィは文字数に入れないので-ma'o-も3文字rafsi
