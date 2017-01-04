@@ -20,7 +20,7 @@ fi'e [la .sozysozbot.](http://twitter.com/sosobotpi)
 …  
 と、言えたらどんなに嬉しいことか。  
 困ったことに、CLLはrafsiに関して自己矛盾を含んでいるのである。  
-その話は[別記事](https://sozysozbot.github.io/FIXME)で触れる<sup>[1](#foot1)</sup>として、ここではサラッとrafsiについて解説するのみにしておく。  
+その話は[別記事（未うｐ）](https://sozysozbot.github.io/FIXME)で触れる<sup>[1](#foot1)</sup>として、ここではサラッとrafsiについて解説するのみにしておく。  
 rafsiとは、複合語(lujvo)を生み出すための形態素で、その形には8種類ある。
 Cが子音、CCが「語頭に立ちうる二重子音」を表す。C/Cは「語中にあり得る二重子音」。
 
@@ -131,7 +131,7 @@ lujvoにおいても同様のことが言える。
 --------
 ### 脚注
 
-<a name="foot1">1</a>: 無駄に長くなったので分離  
+<a name="foot1">1</a>: 無駄に長くなりそうなので分離  
 <a name="foot2">2</a>: アポストロフィは文字数に入れないので-ma'o-も3文字rafsi  
 <a name="foot3">3</a>: なんかポエム始まったぞ  
 <a name="foot4">4</a>: 駄目だこいつ…早くなんとかしないと…   
