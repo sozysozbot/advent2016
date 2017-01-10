@@ -106,8 +106,8 @@ lujvoにおいても同様のことが言える。
 - case 2: [CVV + CCV]で単語が完成する場合（例： {ma'ovla}, {fu'ivla}）
 	- 特別な操作は不要
 - case 3: 丸いパンがCVVで、case 2以外のとき
-	- CVVの後に`r`を挿入（例： {fa'orma'o}, {fu'irvlarafsi}）
-	- ただし、直後に既に`r`がある場合は挿入されるのは`n`（例： {ka'enri'u}）
+	- CVVの後に`r`を挿入（例： {fa'o**r**ma'o}, {fu'i**r**vlarafsi}）
+	- ただし、直後に既に`r`がある場合は挿入されるのは`n`（例： {ka'e**n**ri'u}）
 - case 4: 丸いパンがCVCのとき
 	- 3-1へ進む
 
