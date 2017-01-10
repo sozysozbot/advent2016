@@ -121,6 +121,7 @@ lujvoにおいても同様のことが言える。
 - [-cas- -tadji-] → {cas**y**tadji} （全てCC）
 - [-kan- -tadji-] → {kantadji} （`nt`はC/C）
 - [-cas- -kan- -tadji-] → {caskantadji} （`sk`はCCだけど`nt`はC/C）
+- [-pas- -paz- -badna-] → {paspazbadna} （`dn`がC/C）
 - [-pas- -pas- -y- -badna-] → {pas**y**pasybadna} （`dn`はC/Cだが判定にかかるのは`paspasy`の部分まで）
 
 --------
