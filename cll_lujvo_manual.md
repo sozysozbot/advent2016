@@ -74,7 +74,7 @@ CVC/CV | -karce-
 例：  
 -plis- + -ladru- → plis**y**ladru
 
-これは、lujvoを一意に分解するのに必要な規則である。この規則と、lujvoの2文字目には絶対にyが来ないということから、先頭を読むだけで {plisyladru} が *[-pli- + syladru] ではなく [-plisy- + ladru] であることを知ることができるのだ。流石LLG、賢い。  
+これは、lujvoを一意に分解するのに必要な規則である。lujvoの2文字目には絶対にyが来ないことが知られているので、そのこととこの規則から、先頭を読むだけで {plisyladru} が *[-pli- + syladru] ではなく [-plisy- + ladru] であることを知ることができるのだ。流石LLG、賢い。  
 ちなみにこの例でyを抜かすと{plisladru}となるが、これは[-pli- + -sla- + -dru-]である。CVC/C型については{karctadji}を考えてみよう。
   
   
